@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #01bdd5;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(5, 50px);
+            gap: 20px;
+            background-color: #262c2c;
+            width: 80%;
+            margin:100px auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 40px;
+            border-radius:20px ;
+            
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            background: #2e3639;
+            border-radius:10px ;
+            justify-content: center;
+            display: flex;
+            font-weight: bold;
+            align-items: center;
+            align-items: center;
+            color: teal;
+            cursor: pointer;
+        }
+
+        #enter{
+            grid-area: 3/11/4/span 2;
+        }
+        #shift{
+            grid-area: 4/11/5/span 2;
+        }
+        #space{
+            grid-area: 5/5/5/9;
+        }
+
+        #container>div:hover{
+            color: black;
+            background-color: aqua;
+        }
+        input{
+            width: 70%;
+            display: block;
+            height: 70px;
+            border-radius:10px ;
+            margin:30px auto;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="res">
+    <div id="container">
+        <div>~</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>delete</div>
+        <div>tab</div>
+        <div>Q</div>
+        <div>W</div>
+        <div>E</div>
+        <div>R</div>
+        <div>T</div>
+        <div>Y</div>
+        <div>u</div>
+        <div>I</div>
+        <div>O</div>
+        <div>P</div>
+        <div>\</div>
+        <div>caps</div>
+        <div>A</div>
+        <div>S</div>
+        <div>D</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div id="enter">Enter</div>
+        <div>Shift</div>
+        <div>Z</div>
+        <div>X</div>
+        <div>C</div>
+        <div>V</div>
+        <div>B</div>
+        <div>N</div>
+        <div>M</div>
+        <div><</div>
+        <div>></div>
+        <div id="shift">Shift</div>
+        <div>J</div>
+        <div>control</div>
+        <div>option</div>
+        <div>alt</div>
+        <div id="space">Space</div>
+        <div>alt</div>
+        <div>option</div>
+        <div>\</div>
+        <div>.</div>
+
+    </div>
+    <script src="./index.js"></script>    
+</body>
+</html>
